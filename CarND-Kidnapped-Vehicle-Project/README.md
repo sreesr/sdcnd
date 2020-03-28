@@ -1,6 +1,9 @@
 # Overview
 This repository contains all the code needed to complete the final project for the Localization course in Udacity's Self-Driving Car Nanodegree.
 
+## Output 
+![](KidnappedVehicle_20200328.gif.gif)
+
 #### Submission
 All you will need to submit is your `src` directory. You should probably do a `git pull` before submitting to verify that your project passes the most up-to-date version of the grading code (there are some parameters in `src/main.cpp` which govern the requirements on accuracy and run time).
 
@@ -15,14 +18,12 @@ This project involves the Term 2 Simulator which can be downloaded [here](https:
 This repository includes two files that can be used to set up and install uWebSocketIO for either Linux or Mac systems. For windows you can use either Docker, VMware, or even Windows 10 Bash on Ubuntu to install uWebSocketIO.
 
 Once the install for uWebSocketIO is complete, the main program can be built and ran by doing the following from the project top directory.
-
-1. mkdir build
-2. cd build
-3. cmake ..
-4. make
-5. ./particle_filter
-
-Alternatively some scripts have been included to streamline this process, these can be leveraged by executing the following in the top directory of the project:
+### Instructions in ubuntu 18.04
+- sudo apt-get install git cmake g++ zlib1g-dev
+- ./install-ubuntu.sh
+- ./clean.sh
+- ./build.sh
+- ./run.sh
 
 1. ./clean.sh
 2. ./build.sh
@@ -139,5 +140,3 @@ The things the grading code is looking for are:
 
 2. **Performance**: your particle filter should complete execution within the time of 100 seconds.
 
-## How to write a README
-A well written README file can enhance your project and portfolio.  Develop your abilities to create professional README files by completing [this free course](https://www.udacity.com/course/writing-readmes--ud777).
